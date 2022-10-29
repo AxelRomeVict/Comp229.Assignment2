@@ -1,35 +1,34 @@
-<%-include partials/header.ejs %>
+<%- include partials/header.ejs %>
 
-<%-include partials/main_nav.ejs%>
+<%- include partials/main_nav.ejs %>
 
-<div class="about-section">
-    <h1>About Us Page</h1>
-    <p>Some text about who we are and what we do.<br>
-       Resize the browser window to see that this page is responsive by the way.</p>
-  </div>
-  
-  <h2 style="text-align:center">Our Team</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>jane@example.com</p>
-          <p><button class="button">Contact</button></p>
+<main class="container">
+    <div class="jumbotron">
+      <div style="width: 100%; overflow: hidden;">
+        <div class="vertical-center">
+          <div class="left" style=" text-align: left;">
+            <div >
+              <h1 class="display-4" style="font-size: 30px; text-align:center"><i class="fa-regular fa-user"></i> &nbsp;&nbsp;<b>Welcome to the <%= title %> Page </b></h1>
+              <br>
+                <h3> About me </h3>
+                <br>
+                <p>Highly motivated Computer Science and Administrative practitioner with extensive experience such as
+                  project manager and/or collaborator in initiatives related to optimization processes, strategic planning,
+                  information mapping, documentation, cleaning and management of databases, among others.</p>
+            </div>
+          <div style="display: flex;">
+                <a href="Assets\images\resume.pdf"><button type="button" class="btn btn-secondary">Resume</button></a>
+                <p> &nbsp;&nbsp;  Press here</p>
+            </div>
+          
         </div>
       </div>
+      <div >
+          <img src="Assets\images\AX.JPG" alt="AxelR" height="300" style="float:right; margin: -25px 0px 00px 150px;" class="centered" >
+          </div>
     </div>
+</main>
 
+<%- include partials/bottom_nav.ejs %>
 
-
-
-
-
-
-
-
-<%-include partials/bottom_nav.ejs%>
-<%-include partials/footer.ejs %>
+<%- include partials/footer.ejs %>

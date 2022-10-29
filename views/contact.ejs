@@ -1,0 +1,49 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+
+<main class="container">
+    <div class="jumbotron">
+      <div style="width: 100%; overflow: hidden;">
+        <div class="vertical-center">
+          <div class="left" style=" text-align: center;">
+            <div >
+              <h1 class="display-4" style="font-size: 30px; text-align:center"><i class="fa-solid fa-mobile-screen-button"></i></i>&nbsp;&nbsp;<b>Welcome to the <%= title %> Page </b></h1>
+                <br>
+                <h3> Contact</h3>
+                
+                <p><i class="fa-regular fa-envelope"></i> mailto: aromerov@my.centennialcollege.ca</p>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@email.com">
+            </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="111-111-1111" aria-label="Phone number">
+                </div>
+            </div>
+    <br>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="( message )"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+            </div>
+        </div>   
+      </div>
+    </div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

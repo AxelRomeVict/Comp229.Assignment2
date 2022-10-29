@@ -1,12 +1,11 @@
-//IIFE --Immeditaly Invoked Function Expression
+// IIfe -- Immediately Invoked Function Expression
 (function(){
 
-function Start()
-{
-    console.log("App Started ... ");
-}
+    function Start()
+    {
+        console.log("App started...")
+    }
 
-window.addEventListener("load", Start);
+    window.addEventListener("load", Start);
 
-
-})();
+})()

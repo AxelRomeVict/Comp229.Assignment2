@@ -1,18 +1,40 @@
-<%-include partials/header.ejs %>
+<%- include partials/header.ejs%>
 
-<%-include partials/main_nav.ejs%>
+<%- include partials/main_nav.ejs%>
 
-
-
-
-<!-- Main Content -->
 <main class="container">
- <div class = "jumbotron">
-    <h1 class = "display -4"> Welcome to the <%= title %> page (COMP229)</h1>
- </div>
-
+  <div class="jumbotron">
+    <div style="width: 100%; overflow: hidden;">
+      
+      <div class="vertical-center">
+        <img src="Assets\images\AX.JPG" alt="Axel R" height="325" style="float:right; margin: 0px -250px 0px 0px;" >
+        <div style=" text-align: left;">
+          
+          <div>
+            <h1 class="display-4" style="font-size: 30px; text-align:center">&nbsp;&nbsp;<b>Welcome to the <%= title %>  </b></h1>
+            <br>            
+              <p> My name is Axel Romero, <br>id: 301244813
+                <br> Comp229-Web Application Development
+                <br> Assignment - Express Portfolio
+              </p>
+            <br>
+              <div style="display: flex;">
+                <p> &nbsp;&nbsp;   Press to view my about page     .</p><br><br>
+              <a href="\about"><button type="button" class="btn btn-secondary">About </button></a>
+              </div>
+              <div style="display: flex;">
+                <p> &nbsp;&nbsp;  Press to view my contact page    .</p>   
+              <a href="\contact"><button type="button" class="btn btn-secondary">Contact</button></a>      
+              </div>              
+              <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
+  <%- include partials/bottom_nav.ejs%>
 
-<%-include partials/bottom_nav.ejs%>
-<%-include partials/footer.ejs %>
+<%- include partials/footer.ejs%>
+
